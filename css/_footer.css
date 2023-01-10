@@ -1,0 +1,39 @@
+/*SETTINGS FOR FOOTER SECTION*/
+.footer {
+  width: 100%;
+  height: 7rem;
+  background-color: var(--blue-2);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer-container .footer-text {
+  letter-spacing: 0.05rem;
+}
+
+.footer-text .footer-link {
+  text-decoration: none;
+  color: var(--orange-1);
+}
+
+.footer-text .footer-link:hover {
+  color: var(--blue-1);
+}
+
+/*SETTINGS FOR FOOTER SECTION*/
+@media only screen and (max-width: 576px) {
+  .footer {
+    height: 8rem;
+  }
+  .footer-container {
+    text-align: center;
+    font-size: 1rem;
+  }
+}

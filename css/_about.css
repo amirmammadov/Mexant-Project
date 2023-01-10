@@ -1,0 +1,222 @@
+/*SETTINGS FOR INFO SECTION*/
+.info {
+  width: 100%;
+  height: auto;
+  background-color: var(--gray-4);
+}
+
+.info .info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info-container .info-image {
+  width: 50%;
+}
+
+.info-container .info-image .info-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow-1);
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.info-container .info-image .info-img:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: var(--transition);
+}
+
+.info-container .info-content {
+  width: 48%;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow-1);
+  border-radius: 0.5rem;
+  padding: 2.5rem 2rem;
+}
+
+.info-container .info-content .info-content-item {
+  border-bottom: var(--border-bottom);
+  padding: 1rem 0;
+}
+
+.info-content .info-content-item .info-item-header {
+  font-size: 1.3rem;
+  color: var(--blue-1);
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-content .info-content-item:first-child .info-item-header {
+  color: var(--green-1);
+}
+
+.info-content-item .info-item-header span {
+  display: block;
+  font-size: 2rem;
+}
+
+.info-content .info-content-item .info-item-header:hover {
+  cursor: pointer;
+}
+
+.info-content .info-content-item .info-item-text {
+  height: 0;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.info-content .info-content-item .info-item-text.active-info {
+  height: 100%;
+}
+
+/*MEDIA QUERIES FOR INFO SECTION*/
+@media only screen and (max-width: 1200px) {
+  .info {
+    padding: 7rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .info .info-container {
+    flex-direction: column;
+  }
+  .info-container .info-image {
+    width: 100%;
+  }
+  .info-container .info-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .info {
+    padding: 7rem 1rem;
+  }
+}
+
+/*SETTINGS FOR IDEA SECTION*/
+.idea {
+  background-color: var(--gray-4);
+}
+
+.idea-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.idea-container .idea-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 45%;
+}
+
+.idea-container .idea-info .idea-info-heading {
+  font-size: 1.5rem;
+  color: var(--blue-1);
+  letter-spacing: 0.01rem;
+}
+
+.idea-container .idea-info .idea-info-text {
+  line-height: 1.5rem;
+}
+
+.idea-container .idea-steps {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: 53%;
+  gap: 2rem;
+}
+
+.idea-container .idea-steps .idea-steps-item {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow-1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.idea-steps .idea-steps-item .idea-step-number {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 2.7rem;
+  color: var(--green-1);
+  transition: var(--transition);
+}
+
+.idea-steps .idea-steps-item .idea-step-number:hover {
+  top: 1rem;
+  transition: var(--transition);
+}
+
+.idea-steps .idea-steps-item .idea-step-heading {
+  font-size: 1.5rem;
+  color: var(--blue-1);
+  margin-bottom: 1rem;
+}
+
+.idea-steps .idea-steps-item .idea-step-text {
+  font-size: 1rem;
+  color: var(--blue-2);
+  line-height: 1.7rem;
+  letter-spacing: 0.01rem;
+  color: var(--blue-1);
+}
+
+/*MEDIA QUERIES FOR IDEA SECTION*/
+@media only screen and (max-width: 1200px) {
+  .idea {
+    padding: 7rem 3rem;
+  }
+  .idea-container {
+    gap: 2rem;
+  }
+  .idea-container .idea-info {
+    width: 40%;
+  }
+  .idea-container .idea-steps {
+    width: 58%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .idea-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .idea-container .idea-info {
+    width: 100%;
+  }
+  .idea-container .idea-steps {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .idea-container .idea-steps {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .idea {
+    padding: 7rem 1rem;
+    text-align: center;
+  }
+  .idea-steps .idea-steps-item .idea-step-number {
+    font-size: 2.2rem;
+  }
+}

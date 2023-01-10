@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEXANT</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/_footer.css" />
+    <!-- SWIPERJS CDN LINK -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/comman.js" defer></script>
+    <script src="./js/home.js" defer></script>
+  </head>
+  <body>
+    <!--START OF NAVBAR-->
+    <nav class="nav flex-container" data-nav>
+      <div class="nav-logo">
+        <a href="./index.html" class="nav-logo-link">
+          <img
+            src="imgs/nav-logo.png"
+            alt="mexant_logo"
+            class="nav-logo-image"
+          />
+        </a>
+      </div>
+      <ul class="nav-links" data-nav-links>
+        <li>
+          <a href="#" class="nav-links-item" id="homePage">home</a>
+        </li>
+        <li>
+          <a href="#services" class="nav-links-item" id="servicesPage"
+            >services</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="nav-links-item" id="aboutPage">about</a>
+        </li>
+        <li class="dropdown" data-dropdown>
+          <button class="nav-links-item nav-icon">
+            pages <span class="material-symbols-outlined"> expand_more </span>
+          </button>
+          <div class="dropdown-content" data-dropdown-content>
+            <a href="./about.html" class="nav-links-item dropdown-link"
+              >about us</a
+            >
+            <a href="./services.html" class="nav-links-item dropdown-link"
+              >our services</a
+            >
+            <a href="./contact.html" class="nav-links-item dropdown-link"
+              >contact us</a
+            >
+          </div>
+        </li>
+        <li>
+          <a href="#testimonials" class="nav-links-item" id="testimonialsPage"
+            >testimonials</a
+          >
+        </li>
+        <li class="nav-links-support">
+          <a href="./contact.html" class="nav-links-item nav-links-item-support"
+            >contact support</a
+          >
+        </li>
+      </ul>
+      <div class="nav-menu" data-nav-menu>
+        <span class="nav-menu-el"></span>
+        <span class="nav-menu-el"></span>
+        <span class="nav-menu-el"></span>
+      </div>
+    </nav>
+    <!--END OF NAVBAR-->
+    <!--START OF CAROUSEL SECTION-->
+    <section class="carousel-container" data-carousel id="home">
+      <div class="carousel-main" data-carousel-main>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &#8656;
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          &#8658;
+        </button>
+        <ul class="carousel-slides" data-carousel-slides>
+          <li class="carousel-slides-item">
+            <div class="carousel-text">
+              <h2 class="carousel-text-heading">
+                best one in town & crypto
+                <span class="carousel-special">services</span>
+              </h2>
+              <div class="underline"></div>
+              <p class="carousel-text-info">
+                Mexant HTML5 Template is provided for free of charge. This
+                layout is based on Boostrap 5 CSS framework. Anyone can download
+                and edit for any professional website. Thank you for visiting
+                TemplateMo website.
+              </p>
+              <div class="carousel-text-buttons">
+                <button class="special-button btn-discover">
+                  discover more
+                </button>
+                <button class="special-button btn-contact">contact us</button>
+              </div>
+            </div>
+          </li>
+          <li class="carousel-slides-item" data-active>
+            <div class="carousel-text">
+              <h2 class="carousel-text-heading">
+                digital currency for you & best
+                <span class="carousel-special">crypto</span> tips
+                <span class="carousel-special">services</span>
+              </h2>
+              <div class="underline"></div>
+              <p class="carousel-text-info">
+                When you browse through different tags on TemplateMo website,
+                you can see a variety of CSS templates which are responsive
+                website designs for different individual needs. Please tell your
+                friends about our website. Thank you.
+              </p>
+              <div class="carousel-text-buttons">
+                <button class="special-button btn-discover">
+                  discover more
+                </button>
+                <button class="special-button btn-contact">contact us</button>
+              </div>
+            </div>
+          </li>
+          <li class="carousel-slides-item">
+            <div class="carousel-text">
+              <h2 class="carousel-text-heading">
+                get <span class="caoursel-special">ready</span> for your
+                business & upgrade
+                <span class="carousel-special">all aspects</span>
+                <span class="carousel-special">services</span>
+              </h2>
+              <div class="underline"></div>
+              <p class="carousel-text-info">
+                You will see a bunch of free CSS templates when you search on
+                Google. TemplateMo website is probably the best one because it
+                is 100% free. It does not ask you anything in return. You have a
+                total freedom to use any template for any purpose.
+              </p>
+              <div class="carousel-text-buttons">
+                <button class="special-button btn-discover">
+                  discover more
+                </button>
+                <button class="special-button btn-contact">contact us</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--END OF CAROUSEL SECTION-->
+    <!--START OF SERVICES SECTION-->
+    <section class="section services" id="services">
+      <div class="services-container">
+        <div class="services-item">
+          <div class="services-item-icon">
+            <span class="material-symbols-outlined"> css </span>
+          </div>
+          <div class="services-item-info">
+            <h2 class="services-item-heading">CSS Templates</h2>
+            <p class="services-item-text">
+              TemplateMo website is the best for you to explore and download
+              free website templates.
+            </p>
+          </div>
+        </div>
+        <div class="services-item">
+          <div class="services-item-icon">
+            <span class="material-symbols-outlined"> html </span>
+          </div>
+          <div class="services-item-info">
+            <h2 class="services-item-heading">HTML5 Web Pages</h2>
+            <p class="services-item-text">
+              Templates are based on Bootstrap 5 CSS framework. You can easily
+              adapt or modify based on your needs.
+            </p>
+          </div>
+        </div>
+        <div class="services-item">
+          <div class="services-item-icon">
+            <span class="material-symbols-outlined"> fireplace </span>
+          </div>
+          <div class="services-item-info">
+            <h2 class="services-item-heading">Responsive Designs</h2>
+            <p class="services-item-text">
+              All of our CSS templates are 100% free to use for commercial or
+              business websites.
+            </p>
+          </div>
+        </div>
+        <div class="services-item">
+          <div class="services-item-icon">
+            <span class="material-symbols-outlined"> business_center </span>
+          </div>
+          <div class="services-item-info">
+            <h2 class="services-item-heading">Mobile and Tablet ready!</h2>
+            <p class="services-item-text">
+              Our HTML CSS templates are well-tested on mobile, tablet, and
+              desktop compatibility.
+            </p>
+          </div>
+        </div>
+        <div class="services-item">
+          <div class="services-item-icon">
+            <span class="material-symbols-outlined"> mosque </span>
+          </div>
+          <div class="services-item-info">
+            <h2 class="services-item-heading">Fast Customer Support</h2>
+            <p class="services-item-text">
+              Do not be hesitated to contact us if you have any question or
+              concern about our templates.
+            </p>
+          </div>
+        </div>
+        <div class="services-item">
+          <div class="services-item-icon">
+            <span class="material-symbols-outlined"> extension </span>
+          </div>
+          <div class="services-item-info">
+            <h2 class="services-item-heading">Fully Customizable</h2>
+            <p class="services-item-text">
+              If you have any idea or suggestion about new templates, feel free
+              to let us know.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END OF SERVICES SECTION-->
+    <!--START OF SOLUTION SECTION-->
+    <section class="solution">
+      <div class="solution-container">
+        <div class="solution-text">
+          Business <span class="solution-special">Solutions</span> and
+          <span class="solution-special">Crypto</span>
+          Investments
+        </div>
+        <div class="solution-buttons">
+          <button class="special-button btn-discover">discover more</button>
+          <button class="special-button btn-contact">contact us</button>
+        </div>
+      </div>
+    </section>
+    <!--END OF SOLUTION SECTION-->
+    <!--START OF ABOUT SECTION-->
+    <section class="section about" id="about">
+      <div class="about-container flex-container">
+        <div class="section-header">
+          <h3>about us</h3>
+          <h1>know us better</h1>
+        </div>
+        <div class="about-content">
+          <div class="about-content-table">
+            <div class="about-table-buttons">
+              <button
+                class="about-table-btn active-table-button"
+                data-table-button
+                data-id="0"
+              >
+                web design
+              </button>
+              <button class="about-table-btn" data-table-button data-id="1">
+                graphics
+              </button>
+              <button class="about-table-btn" data-table-button data-id="2">
+                web coding
+              </button>
+            </div>
+            <div class="about-table-info" data-table-parent></div>
+          </div>
+          <div class="about-content-info flex-container">
+            <h2>Please tell us about your idea and how you want it to be</h2>
+            <p>
+              You are allowed to use this template for your websites. You are
+              <strong>NOT allowed</strong>
+              to redistribute the template ZIP file on any other template
+              websites.
+            </p>
+            <p>
+              Thank you for downloading and using our templates. Please tell
+              your friends about our website.
+            </p>
+            <button class="special-button btn-discover">discover more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END OF ABOUT SECTION-->
+    <!--START OF FORM SECTION-->
+    <section class="contact">
+      <div class="contact-container section flex-container">
+        <div class="contact-picture">
+          <img
+            src="./imgs/form-1.jpg"
+            alt="contact_img"
+            class="contact-picture-item"
+          />
+        </div>
+        <div class="contact-form flex-container">
+          <div class="section-header">
+            <h3>your freedom</h3>
+            <h1>get a financial plan</h1>
+          </div>
+          <div class="contact-form-item">
+            <form class="form flex-container">
+              <div class="form-main-part">
+                <label for="formName" class="form-item-label">
+                  Your Name
+                  <input type="text" id="formName" class="form-item" />
+                </label>
+                <label for="formMail" class="form-item-label">
+                  Your Email
+                  <input type="email" id="formMail" class="form-item" />
+                </label>
+              </div>
+              <div class="form-subject">
+                <label for="formSubject" class="form-item-label">
+                  Subject
+                  <input type="text" id="formSubject" class="form-item" />
+                </label>
+              </div>
+              <div class="form-option">
+                <label for="formOption" class="form-item-label">
+                  Your Reason
+                  <select id="formOption" class="form-item">
+                    <option value="choose-an-option">Choose an Option</option>
+                    <option value="online-banking">Online Banking</option>
+                    <option value="financial-control">Financial Control</option>
+                    <option value="yearly-profit">Yearly Profit</option>
+                    <option value="crypto-investment">Crypto Investment</option>
+                  </select>
+                </label>
+              </div>
+              <button class="special-button btn-contact">submit now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END OF FORM SECTION-->
+    <!--START OF TESTIMONIALS SECTION-->
+    <section class="section testimonials" id="testimonials">
+      <div class="testimonials-container flex-container">
+        <div class="section-header">
+          <h3>testimonials</h3>
+          <h1>what they say</h1>
+        </div>
+        <!-- Slider main container -->
+        <div class="testimonials-content swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="testimonial-person">
+                <div class="testimonial-info">
+                  <span class="material-symbols-outlined"> format_quote </span>
+                  <div class="testimonial-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Magni nihil, dignissimos iure nulla nobis recusandae
+                    reprehenderit ducimus quidem commodi rem!
+                  </div>
+                  <div class="testimonial-name">Andrew Garfield</div>
+                  <div class="testimonial-position">CEO of Mexant</div>
+                </div>
+                <div class="testimonial-image">
+                  <img
+                    src="./imgs/person-1.jpg"
+                    alt="testimonial_person"
+                    class="testimonial-pic"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-person">
+                <div class="testimonial-info">
+                  <span class="material-symbols-outlined"> format_quote </span>
+                  <div class="testimonial-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Magni nihil, dignissimos iure nulla nobis recusandae
+                    reprehenderit ducimus quidem commodi rem!
+                  </div>
+                  <div class="testimonial-name">Andrew Garfield</div>
+                  <div class="testimonial-position">CEO of Mexant</div>
+                </div>
+                <div class="testimonial-image">
+                  <img
+                    src="./imgs/person-1.jpg"
+                    alt="testimonial_person"
+                    class="testimonial-pic"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-person">
+                <div class="testimonial-info">
+                  <span class="material-symbols-outlined"> format_quote </span>
+                  <div class="testimonial-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Magni nihil, dignissimos iure nulla nobis recusandae
+                    reprehenderit ducimus quidem commodi rem!
+                  </div>
+                  <div class="testimonial-name">Andrew Garfield</div>
+                  <div class="testimonial-position">CEO of Mexant</div>
+                </div>
+                <div class="testimonial-image">
+                  <img
+                    src="./imgs/person-1.jpg"
+                    alt="testimonial_person"
+                    class="testimonial-pic"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </section>
+    <!--END OF TESTIMONIALS SECTION-->
+    <!--START OF FOOTER-->
+    <footer class="footer">
+      <div class="footer-container flex-container">
+        <div class="footer-text">
+          Copyright &copy <span data-currentYear></span> Mexant Co., Ltd. All
+          Rights Reserved.
+        </div>
+        <div class="footer-text">
+          Designed by
+          <a href="https://templatemo.com/" target="_blank" class="footer-link"
+            >TemplateMo</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!--END OF FOOTER-->
+    <!--ANIMATION CDNs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  </body>
+</html>

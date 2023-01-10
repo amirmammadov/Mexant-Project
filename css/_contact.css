@@ -1,0 +1,171 @@
+/*SETTINGS FOR LOCATION SECTION*/
+.location {
+  width: 100%;
+  height: auto;
+  background-color: var(--gray-4);
+}
+
+.location-container .location-map {
+  width: 100%;
+  height: auto;
+}
+
+.location-container .location-map iframe {
+  width: 100%;
+  height: 30rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.location-container .location-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: -4rem;
+}
+
+.location-details .location-details-item {
+  width: 20rem;
+  flex-grow: 1;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  box-shadow: var(--box-shadow-2);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.location-details .location-details-item:hover {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.location-details .location-details-item span {
+  color: var(--green-1);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.location-details .location-details-item .location-item-heading {
+  font-size: 1.2rem;
+  letter-spacing: 0.01rem;
+  color: var(--blue-1);
+  margin-bottom: 1rem;
+}
+
+.location-details .location-details-item .location-info {
+  color: var(--green-1);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.location-details .location-details-item .location-info:hover {
+  color: var(--orange-1);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+/*MEDIA QUERIES FOR LOCATION SECTION*/
+@media only screen and (max-width: 1200px) {
+  .location {
+    padding: 7rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .location-container .location-details {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .location-details .location-details-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .location {
+    padding: 7rem 1rem;
+  }
+}
+
+/*SETTINGS FOR FORM-MESSAGE SECTION*/
+.form-message {
+  width: 100%;
+  height: auto;
+  background-color: var(--gray-4);
+  padding-top: 0;
+}
+
+.form-message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.form-message-container .section-header {
+  text-align: center;
+}
+
+.form-message-container .section-header h1 {
+  color: var(--blue-1);
+}
+
+.form-message-body {
+  width: 100%;
+  height: auto;
+}
+
+.form-message-body .form-message-itself {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.form-message-itself .form-message-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.form-message-box .form-message-item,
+.form-textarea {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--blue-1);
+  font-size: 1rem;
+}
+
+.form-message-itself .special-button {
+  transition: var(--transition);
+  width: 10rem;
+}
+
+.form-message-itself .special-button:hover {
+  background-color: var(--green-1);
+  transition: var(--transition);
+}
+
+/*MEDIA QUERIES FOR FORM-MESSAGE SECTION*/
+@media only screen and (max-width: 1200px) {
+  .form-message {
+    padding: 0 3rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-message-itself .form-message-box {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .form-message {
+    padding: 0 3rem 1rem;
+  }
+}
